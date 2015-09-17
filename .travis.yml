@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - "stable"
+
+before_install:
+
+before_script:
+
+script:
+
+after_success:
+
+# blacklist
+branches:
+  except:
+    - deploy
+
+# whitelist
+branches:
+  only:
+    - master
