@@ -32,6 +32,19 @@ Reduce them to a single space in the reversed string.
 
 首先找到各个单词(以空格隔开)，根据题目要求，单词应从后往前依次放入。正向取出比较麻烦，因此可尝试采用逆向思维——先将输入字符串数组中的单词从后往前逆序取出，取出单词后即翻转并append至新字符串数组。在append之前加入空格即可。
 
+### Python
+```python
+class Solution:
+    # @param s : A string
+    # @return : A string
+    def reverseWords(self, s):
+        if s is None:
+            return None
+        stringList = s.strip().split(" ")
+        return " ".join(stringList[::-1])
+```
+
+
 ### C++
 
 ```c++
